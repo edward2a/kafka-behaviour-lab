@@ -1,0 +1,19 @@
+---
+version: '3.6'
+
+services:
+
+  kafka:
+    container_name: kafka
+    image: spotify/kafka
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '10m'
+    environment:
+      ADVERTISED_HOST: '127.0.0.1'
+      ADVERTISED_PORT: 9092
+      AUTO_CRETE_TOPICS: 'true'
+      KAFKA_HEAP_OPTS: -Xms384M -Xmx384M
+    network_mode: host
+
