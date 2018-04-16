@@ -13,7 +13,7 @@ services:
     environment:
       ADVERTISED_HOST: '127.0.0.1'
       ADVERTISED_PORT: 9092
-      AUTO_CRETE_TOPICS: 'true'
+      AUTO_CREATE_TOPICS: 'true'
       KAFKA_HEAP_OPTS: -Xms384M -Xmx384M
     network_mode: host
 
