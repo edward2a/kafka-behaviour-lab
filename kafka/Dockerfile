@@ -6,7 +6,7 @@ RUN apk update && \
 RUN addgroup -S kafka && \
     adduser -S -D -G kafka kafka
 
-RUN wget http://ftp.heanet.ie/mirrors/www.apache.org/dist/kafka/1.1.0/kafka_2.11-1.1.0.tgz && \
+RUN wget http://mirrors.whoishostingthis.com/apache/kafka/1.1.0/kafka_2.11-1.1.0.tgz && \
     mkdir /opt && \
     tar -xf kafka_2.11-1.1.0.tgz -C /opt && \
     ln -s /opt/kafka_2.11-1.1.0 /opt/kafka

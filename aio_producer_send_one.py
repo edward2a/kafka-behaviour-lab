@@ -25,7 +25,7 @@ class SendLoop(object):
 
     async def send_one_loop(self):
         asyncio.ensure_future(self.send_one_loop())
-        await self.producer.send('test', b'test message')
+        await self.producer.send('input', b'test message')
 
 
 #async def executor():
